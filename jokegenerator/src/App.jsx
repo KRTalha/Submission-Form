@@ -3,8 +3,8 @@ import Joke from "./Joke";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Joke Generator Using React and Joke API</h1>
+    <div>
+      <h1>Generate joke from React Api</h1>
       <Joke />
     </div>
   );

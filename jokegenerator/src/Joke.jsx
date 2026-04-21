@@ -1,20 +1,21 @@
-import React from "react";
-import Button from "./Button";
 import "./Joke.css";
+import Button from "./Button";
+import React from "react";
 
 const Joke = () => {
-  const [Joke, setJoke] = React.useState("");
+  const [joke, setJoke] = React.useState("");
+
   const fetchApi = () => {
     fetch("https://sv443.net/jokeapi/v2/joke/Programming?type=single")
       .then((res) => res.json())
       .then((data) => setJoke(data.joke));
   };
-
   return (
     <div>
       <Button callApi={fetchApi} />
-      <p>{Joke}</p>
+      <p>{joke}</p>
     </div>
   );
 };
+
 export default Joke;

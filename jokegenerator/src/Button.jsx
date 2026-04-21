@@ -2,6 +2,6 @@ import React from "react";
 import "./Button.css";
 
 const Button = (props) => {
-  return <button onClick={props.callApi}>Click to Generate a Joke.</button>;
+  return <button onClick={props.callApi}>Joke Generate</button>;
 };
 export default Button;
