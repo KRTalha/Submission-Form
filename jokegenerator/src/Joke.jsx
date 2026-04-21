@@ -11,7 +11,7 @@ const Joke = () => {
       .then((data) => setJoke(data.joke));
   };
   return (
-    <div>
+    <div className="joke">
       <Button callApi={fetchApi} />
       <p>{joke}</p>
     </div>
